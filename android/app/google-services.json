@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "92570360824",
+    "firebase_url": "https://whatstyleusers.firebaseio.com",
+    "project_id": "whatstyleusers",
+    "storage_bucket": "whatstyleusers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92570360824:android:75250aeb4042d0ccd7940d",
+        "android_client_info": {
+          "package_name": "com.whatstyle.avenuebarbering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92570360824-6ifejv2u80drd2ccpu6not4v9naoju60.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whatstyle.avenuebarbering",
+            "certificate_hash": "630716db7003fc0bd4de4d6b2a152295c874107d"
+          }
+        },
+        {
+          "client_id": "92570360824-bf7kh8riq73097ije3is4k2bnf74nf2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH9aviXTXgIt1dBQ4egY8AxGv-V_Ve7rE"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}

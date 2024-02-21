@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Avenue</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">cover</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+  <string name="facebook_app_id">648976345925350</string>
+  <string name="facebook_client_token">e24b9cc975e1d92104d7098be995491b</string>
+  <string name="fb_login_protocol_scheme">fb648976345925350</string>
+</resources>

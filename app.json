@@ -1,30 +1,124 @@
 {
   "expo": {
-    "name": "mygo",
-    "slug": "mygo",
-    "version": "1.0.0",
+    "name": "Avenue",
+    "slug": "avenue-barbering",
+    "privacy": "hidden",
+    "scheme": "avenue-barbering",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.11.3",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/images/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#585858"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+      "buildNumber": "20",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "supportsTablet": false,
+      "bundleIdentifier": "com.whatstyle.avenuebarbering",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "Tracking is required for social sign-ins to function natively. If you accept tracking and the Facebook app is installed, we will track your redirection to the Facebook app to sign-in. After authenticating, you will be redirected back to this app to complete the sign-in process. Otherwise if you decline tracking, you will be required to sign-in via a browser pop-up.",
+        "NSCameraUsageDescription": "Access to the camera is required for the purposes of importing payment cards via scanning.",
+        "LSApplicationQueriesSchemes": [
+          "comgooglemaps",
+          "citymapper",
+          "uber",
+          "lyft"
+        ],
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "android": {
+      "versionCode": 16,
+      "package": "com.whatstyle.avenuebarbering",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "styler-digital",
+            "project": "business-app",
+            "authToken": "80988c208288485092542d48f72f71134e7e378bea7b47cf9e177bb7ce250e52"
+          }
+        }
+      ]
+    },
+    "extra": {
+      "production": false,
+      "businessId": 4,
+      "businessAppKey": "dv4aujrn34a1xin9tegc4df160huvwrsszizqs28ybxjc9hfsj",
+      "businessLogo": "https://cdn.whatstyle.com/businessApps/AvenueBarbering/Logo.png",
+      "businessCover": "https://cdn.whatstyle.com/businessApps/AvenueBarbering/cover.jpg",
+      "stripe": {
+        "publishableKeyProd": "pk_live_51GxzB6FQ8tU2VmRuSkgfhmWioyfOQwEYnCX2TBrbKNYlKGD9YZkufezTf9Zy5CCTmxsOz1HwagrrmGPcxvlgPYiY00odjejsAJ",
+        "publishableKeyDev": "pk_test_51GxzB6FQ8tU2VmRuTC3ufD9Vty8befyESFWsIsl9q5pyZEjl996fwL2bRx2wwLA1QCDfAHe5mo5dqNzidEkOGf9l00uBZXYCNp"
+      },
+      "firebase": {
+        "apiKey": "AIzaSyCKzk4F2IzfJc5HnL6mvN9GfQRCq5bmmpM",
+        "authDomain": "whatstyleusers.firebaseapp.com"
+      },
+      "facebook": {
+        "appId": "648976345925350"
+      },
+      "google": {
+        "iosStandaloneClientId": "92570360824-q2kaorbjmmr6rm2iivqvh25575d61jid.apps.googleusercontent.com",
+        "androidStandaloneClientId": "92570360824-6ifejv2u80drd2ccpu6not4v9naoju60.apps.googleusercontent.com",
+        "expoClientId": "92570360824-bf7kh8riq73097ije3is4k2bnf74nf2m.apps.googleusercontent.com"
+      },
+      "eas": {
+        "projectId": "69e3239f-e012-4ad6-be3e-7e6906e745ce"
+      }
+    },
+    "plugins": [
+      "sentry-expo",
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "648976345925350",
+          "clientToken": "e24b9cc975e1d92104d7098be995491b",
+          "displayName": "Styler",
+          "scheme": "fb648976345925350",
+          "advertiserIDCollectionEnabled": false,
+          "autoLogAppEventsEnabled": false,
+          "isAutoInitEnabled": false,
+          "iosUserTrackingPermission": "Tracking is required for social sign-ins to function natively. If you accept tracking and the Facebook app is installed, we will track your redirection to the Facebook app to sign-in. After authenticating, you will be redirected back to this app to complete the sign-in process. Otherwise if you decline tracking, you will be required to sign-in via a browser pop-up."
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.styler.digital",
+          "enableGooglePay": true
+        }
+      ],
+      "expo-tracking-transparency",
+      "expo-font"
+    ]
   }
 }
